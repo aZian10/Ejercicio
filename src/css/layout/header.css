@@ -1,0 +1,54 @@
+.festival-header,
+.festival-main,
+.festival-footer {
+  width: min(100%, 980px);
+  margin-inline: auto;
+}
+
+.festival-header {
+  margin-top: 16px;
+  background: #111521;
+  border: 1px solid var(--line);
+  border-radius: 0 0 8px 8px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--gold-soft);
+  font-size: 1.55rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.menu-btn {
+  display: none;
+  background: #1d2334;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.festival-nav {
+  display: flex;
+  gap: 18px;
+}
+
+.festival-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.festival-nav a:hover {
+  color: var(--gold-soft);
+}

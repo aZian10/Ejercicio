@@ -1,0 +1,12 @@
+.hero-cta {
+  display: inline-block;
+  margin-top: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: #111;
+  background: linear-gradient(180deg, #e8c594, #c9914c);
+  padding: 9px 14px;
+  border-radius: 6px;
+}

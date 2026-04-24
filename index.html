@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Fusion Gourmet | Festival Gastronomico</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 <body class="festival-page">
   <header class="festival-header">
@@ -52,7 +49,7 @@
 
     <section id="festival" class="panel about-section">
       <article class="about-image">
-        <img src="public/img/festival-chef.webp" alt="Chef preparando un plato gourmet" />
+        <img src="./public/img/festival-chef.webp" alt="Chef preparando un plato gourmet" />
       </article>
       <article class="about-text">
         <h2>Sobre el Festival</h2>
@@ -68,11 +65,11 @@
     <section id="multimedia" class="panel multimedia-section">
       <h2>Multimedia</h2>
       <div class="media-grid">
-        <img src="public/img/dish-1.webp" alt="Plato 1" />
-        <img src="public/img/dish-2.webp" alt="Plato 2" />
-        <img src="public/img/dish-3.webp" alt="Plato 3" />
-        <img src="public/img/dish-4.webp" alt="Plato 4" />
-        <img src="public/img/dish-5.webp" alt="Plato 5" />
+        <img src="./public/img/dish-1.webp" alt="Plato 1" />
+        <img src="./public/img/dish-2.webp" alt="Plato 2" />
+        <img src="./public/img/dish-3.webp" alt="Plato 3" />
+        <img src="./public/img/dish-4.webp" alt="Plato 4" />
+        <img src="./public/img/dish-5.webp" alt="Plato 5" />
         <iframe
           id="festival-video"
           class="media-embed"
@@ -117,33 +114,5 @@
       </section>
     </div>
   </footer>
-
-  <script>
-    const menuBtn = document.getElementById("menu-btn");
-    const mainNav = document.getElementById("main-nav");
-    const festivalVideo = document.getElementById("festival-video");
-
-    if (menuBtn && mainNav) {
-      menuBtn.addEventListener("click", () => {
-        const open = mainNav.classList.toggle("open");
-        menuBtn.setAttribute("aria-expanded", String(open));
-      });
-    }
-
-    if (festivalVideo && window.location.protocol === "file:") {
-      const fallback = document.createElement("a");
-      fallback.className = "media-embed media-fallback";
-      fallback.href = "https://www.youtube.com/watch?v=qfyuvY8ydhk";
-      fallback.target = "_blank";
-      fallback.rel = "noopener noreferrer";
-      fallback.innerHTML = `
-        <span class="media-fallback-kicker">Video externo</span>
-        <strong>Video gastronomico</strong>
-        <span>El reproductor embebido puede fallar cuando la pagina se abre con file://.</span>
-      `;
-
-      festivalVideo.replaceWith(fallback);
-    }
-  </script>
 </body>
 </html>
