@@ -20,7 +20,6 @@ src/
 │   ├── pages/
 │   └── style.css
 ├── views/
-│   └── mascotas.html
 
 index.html
 README.md
